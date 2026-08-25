@@ -1,59 +1,42 @@
-# AsistenteVirtual
+# Asistente Virtual - Taller Práctico 2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.
+Este proyecto corresponde al Taller Práctico 2 y consiste en el desarrollo del frontend de un asistente virtual utilizando Angular.
 
-## Development server
+## Descripción
 
-To start a local development server, run:
+La aplicación presenta una interfaz básica de chat en la que el usuario puede escribir un mensaje y enviarlo mediante el botón "Enviar". Una vez enviado el mensaje, este se muestra en la conversación y el asistente genera una respuesta automática de prueba.
 
-```bash
+En esta etapa se desarrolló únicamente el funcionamiento visual y la interacción básica del asistente. La implementación de respuestas más avanzadas se realizará posteriormente.
+
+## Funcionalidades
+
+- Interfaz de asistente virtual.
+- Campo para ingresar mensajes.
+- Envío de mensajes mediante un botón.
+- Visualización del mensaje enviado por el usuario.
+- Generación de una respuesta automática de prueba.
+
+## Tecnologías utilizadas
+
+- Angular
+- TypeScript
+- HTML
+- CSS
+
+## Ejecución del proyecto
+
+Para ejecutar el proyecto de forma local:
+
+1. Instalar las dependencias:
+
+npm install
+
+2. Iniciar el servidor de desarrollo:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+3. Abrir en el navegador:
 
-## Code scaffolding
+http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Autor - Darío Herrera
