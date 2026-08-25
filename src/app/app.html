@@ -1,0 +1,36 @@
+<div class="pagina">
+  <div class="chat">
+
+    <div class="encabezado">
+      <h1>Asistente Virtual</h1>
+      <p>Disponible para ayudarte</p>
+    </div>
+
+    <div class="mensajes">
+      @for (item of mensajes; track $index) {
+        <div
+          class="mensaje"
+          [class.usuario]="item.tipo === 'usuario'"
+          [class.asistente]="item.tipo === 'asistente'"
+        >
+          <span>{{ item.texto }}</span>
+        </div>
+      }
+    </div>
+
+    <div class="entrada">
+      <input
+        type="text"
+        [(ngModel)]="mensaje"
+        (keyup.enter)="enviarMensaje()"
+        placeholder="Escribe un mensaje..."
+      >
+
+      <button type="button" (click)="enviarMensaje()">
+        Enviar
+      </button>
+    </div>
+
+  </div>
+</div>
+

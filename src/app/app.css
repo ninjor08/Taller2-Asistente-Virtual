@@ -1,0 +1,111 @@
+:host {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.chat {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.encabezado {
+  background: #2563eb;
+  color: white;
+  padding: 18px;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.encabezado p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.mensajes {
+  height: 360px;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+.mensaje {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.mensaje span {
+  max-width: 75%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.mensaje.asistente {
+  justify-content: flex-start;
+}
+
+.mensaje.asistente span {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.mensaje.usuario {
+  justify-content: flex-end;
+}
+
+.mensaje.usuario span {
+  background: #2563eb;
+  color: white;
+}
+
+.entrada {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.entrada input {
+  flex: 1;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.entrada input:focus {
+  border-color: #2563eb;
+}
+
+.entrada button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.entrada button:hover {
+  background: #1d4ed8;
+}
+
